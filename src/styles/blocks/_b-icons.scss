@@ -1,0 +1,26 @@
+.b-icons {
+  &__menu {
+    font-size: 30px;
+    text-decoration: none;
+    color: var(--color-primary);
+    margin: 0 20px;
+
+    &:hover {
+      color: var(--color-primary-active);
+    }
+  }
+
+  &__github {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  &__gitlab {
+    font-size: 20px;
+
+    margin-left: 10px;
+  }
+  &__linkedin {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+}

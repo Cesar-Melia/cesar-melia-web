@@ -1,0 +1,37 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins/breakpoints";
+
+.c-about {
+  width: 100%;
+
+  &__card {
+    max-width: 1000px;
+    background-color: var(--color-primary);
+    padding: 70px;
+    margin: 120px auto;
+    box-shadow: 0px 4px 4px var(--transparent-black);
+    border-radius: 10px;
+  }
+
+  &__img {
+    height: 500px;
+  }
+
+  &__img-container {
+    margin-top: 50px;
+  }
+
+  &__text {
+    color: var(--color-text);
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 28px;
+  }
+
+  &__text-content {
+    text-align: justify;
+  }
+}

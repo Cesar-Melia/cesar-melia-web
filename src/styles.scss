@@ -1,16 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 
 //SETTINGS
+@import "./assets/fonts/icons/style.scss";
 @import "styles/settings/colors.settings";
 @import "styles/settings/fonts.settings";
 
 //GENERIC
+@import "~normalize.css/normalize.css";
 @import "~bootstrap/scss/bootstrap-grid";
 
 //ELEMENTS
 @import "styles/elements/body.element";
 
 //BLOCKS
+@import "styles/blocks/b-icons";
 
 //UTILITIES
 @import "styles/utilities/borders.utilities";
+@import "styles/utilities/hidden.utilities";

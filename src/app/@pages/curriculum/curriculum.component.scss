@@ -1,0 +1,35 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins/breakpoints";
+
+.c-curriculum {
+  width: 100%;
+
+  &__card {
+    max-width: 1000px;
+    background-color: var(--color-primary);
+    padding: 70px;
+    margin: 120px auto;
+    box-shadow: 0px 4px 4px var(--transparent-black);
+    border-radius: 10px;
+  }
+
+  &__text {
+    color: var(--color-background);
+  }
+
+  &__title {
+    margin: 0px;
+    text-align: center;
+    font-size: 28px;
+  }
+
+  &__title2 {
+    margin: 50px 0 0 0;
+    font-size: 18px;
+  }
+
+  &__text-content {
+    text-align: justify;
+  }
+}
