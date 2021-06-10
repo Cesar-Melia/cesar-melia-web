@@ -15,11 +15,8 @@
     width: 100%;
     max-width: 1400px;
   }
-  @include media-breakpoint-down(xl) {
-  }
 
   &__nav {
-    max-width: 1200px;
   }
 
   &__logo {
@@ -43,6 +40,7 @@
   }
 
   &__social {
-    margin-right: 20px;
+    position: absolute;
+    right: 50px;
   }
 }

@@ -1,0 +1,17 @@
+.b-text {
+  color: var(--color-text);
+
+  &--title {
+    margin: 0;
+    font-size: 28px;
+  }
+
+  &--paragraph {
+    text-align: justify;
+  }
+
+  &--title2 {
+    margin: 50px 0 0 0;
+    font-size: 18px;
+  }
+}
