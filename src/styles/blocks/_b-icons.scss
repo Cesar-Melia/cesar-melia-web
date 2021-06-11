@@ -35,4 +35,18 @@
       color: var(--color-primary-active);
     }
   }
+
+  &__big {
+    font-size: 40px;
+    margin: 25px;
+  }
+
+  &__skin-dark {
+    color: var(--color-text);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--color-gray);
+    }
+  }
 }

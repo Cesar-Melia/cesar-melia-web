@@ -8,7 +8,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 })
 export class ContactComponent implements OnInit {
   contactForm: any;
-  submited: boolean = false;
+  submitted: boolean = false;
 
   constructor(private formBuilder: FormBuilder) {
     this.contactForm = this.formBuilder.group({
@@ -21,12 +21,14 @@ export class ContactComponent implements OnInit {
         ],
       ],
       email: ['', [Validators.required, Validators.email]],
-      telefono: [Number, [Validators.maxLength(12)]],
-      comentarios: [
+      phone: ['', [Validators.minLength(9), Validators.maxLength(12)]],
+      comments: [
         '',
-        Validators.required,
-        Validators.minLength(2),
-        Validators.maxLength(244),
+        [
+          Validators.required,
+          Validators.minLength(5),
+          Validators.maxLength(244),
+        ],
       ],
     });
   }

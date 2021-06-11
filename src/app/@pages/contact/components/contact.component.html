@@ -1,18 +1,62 @@
-<section class="c-contact">
-    <div class="c-contact__card d-flex justify-content-between">
+<section class="c-contact d-flex justify-content-center">
+    <div class="c-contact__card d-flex justify-content-center flex-column">
 
-        <div class="col-6">
-            <h2 class="b-text b-text--title">Sobre mi</h2>
-            <p class="b-text b-text--paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                scelerisque, risus et condimentum hendrerit, tortor velit rutrum arcu, nec consectetur nisl enim non
-                dolor. Curabitur fermentum mauris ut dapibus vestibulum. Ut at blandit leo, at facilisis purus. Nunc
-                vitae turpis non orci luctus tincidunt. Suspendisse nec aliquet lectus. Donec non nisi quis mauris
-                pharetra tempor. Nulla sit amet gravida velit. Nam sodales sagittis lacinia. Aliquam vitae finibus
-                lacus. Nunc tincidunt dui quis tempor facilisis. Praesent at semper augue. Curabitur fermentum eros vel
-                sodales iaculis. In eu justo libero. In pellentesque egestas ex, non ultricies nisi volutpat et. Morbi
-                pharetra velit sit amet tortor semper, eu viverra odio dapibus.</p>
+        <form [formGroup]="contactForm" (submit)="submitForm()"
+            class="c-contact__form d-flex flex-column align-items-center">
+            <h2 class="c-contact__title b-text b-text--title">Contacto</h2>
+            <div class="c-contact__block d-flex justify-content-center">
+                <!-- <label class="b-text b-text--title2" for="name">Nombre</label> -->
+                <input formControlName="name" type="text" id="name" class="c-contact__input" placeholder="Nombre">
+            </div>
+            <span class="c-contact__error" *ngIf="submitted && contactForm.controls.name.errors">Nombre es un campo
+                requerido y debe tener entre 2 y 30 caracteres</span>
+            <div class="c-contact__block d-flex justify-content-center">
+                <!-- <label class="b-text b-text--title2" for="email">Email</label> -->
+                <input formControlName="email" type="email" id="email" class="c-contact__input" placeholder="Email">
+            </div>
+            <span class="c-contact__error" *ngIf="submitted && contactForm.controls.email.errors">Email es un campo
+                requerido y debe tener formato de email (nombre@email.com) </span>
+
+            <div class="c-contact__block d-flex justify-content-center">
+                <!-- <label class="b-text b-text--title2" for="phone">Teléfono</label> -->
+                <input formControlName="phone" type="text" id="telephone" placeholder="Teléfono"
+                    class="c-contact__input">
+            </div>
+            <span class="c-contact__error" *ngIf="submitted && contactForm.controls.phone.errors">Teléfono es un campo
+                que debe tener entre 9 y 12 caracteres </span>
+
+            <div class="c-contact__block d-flex justify-content-center">
+                <!-- <label class="b-text b-text--title2" for="comments">Comentarios</label> -->
+                <textarea formControlName="comments" type="textarea" id="comments" class="c-contact__textarea"
+                    placeholder="Comentarios"></textarea>
+            </div>
+            <span class="c-contact__error" *ngIf="submitted && contactForm.controls.comments.errors">Comentarios en un
+                campo requerido y debe tener entre 5
+                y 244
+                caracteres </span>
 
 
+            <input class="c-contact__submit" type="submit">
+
+
+        </form>
+        <div class="c-contact__social d-flex justify-content-center align-items-center">
+            <a href="https://www.instagram.com/cesare_m_h/" target="_blank">
+                <span class="b-icons__big b-icons__skin-dark icon-instagram"></span>
+            </a>
+
+            <a href="https://twitter.com/cesarmelia_" target="_blank">
+                <span class="b-icons__big b-icons__skin-dark icon-twitter d-none d-lg-block"></span>
+            </a>
+            <a href="https://github.com/Cesar-Melia" target="_blank">
+                <span class="b-icons__big b-icons__skin-dark icon-github d-none d-lg-block"></span>
+            </a>
+            <a href="https://gitlab.com/Cesar-Melia" target="_blank">
+                <span class="b-icons__big b-icons__skin-dark icon-gitlab d-none d-lg-block"></span>
+            </a>
+            <a href="https://www.linkedin.com/in/cesar-melia-herraiz" target="_blank">
+                <span class="b-icons__big b-icons__skin-dark icon-linkedin2"></span>
+            </a>
         </div>
 
     </div>
