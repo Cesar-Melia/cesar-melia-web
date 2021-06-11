@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'cm-icons';
   src:
-    url('fonts/cm-icons.ttf?n4rhcm') format('truetype'),
-    url('fonts/cm-icons.woff?n4rhcm') format('woff'),
-    url('fonts/cm-icons.svg?n4rhcm#cm-icons') format('svg');
+    url('fonts/cm-icons.ttf?i7v4r8') format('truetype'),
+    url('fonts/cm-icons.woff?i7v4r8') format('woff'),
+    url('fonts/cm-icons.svg?i7v4r8#cm-icons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,6 +24,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-Logo-simple_Negro:before {
+  content: "\e90c";
+}
+.icon-home:before {
+  content: "\e901";
+}
+.icon-list:before {
+  content: "\e902";
+}
+.icon-blocks:before {
+  content: "\e905";
+}
 .icon-file-pdf-o:before {
   content: "\e90b";
 }
@@ -50,15 +62,6 @@
 }
 .icon-search:before {
   content: "\e903";
-}
-.icon-home:before {
-  content: "\e901";
-}
-.icon-list:before {
-  content: "\e902";
-}
-.icon-blocks:before {
-  content: "\e905";
 }
 .icon-folder-download:before {
   content: "\e933";

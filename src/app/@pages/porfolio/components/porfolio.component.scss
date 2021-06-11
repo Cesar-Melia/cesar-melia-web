@@ -1,3 +1,30 @@
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
 @import "~bootstrap/scss/mixins/breakpoints";
+
+.c-porfolio {
+  width: 100%;
+
+  &__card {
+    max-width: 1000px;
+    background-color: var(--color-primary);
+    padding: 70px;
+    margin: 120px auto;
+    box-shadow: 0px 4px 4px var(--transparent-black);
+    border-radius: 10px;
+  }
+
+  &__gallery {
+  }
+
+  &__project-box {
+    margin: 0;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__img-container {
+  }
+}

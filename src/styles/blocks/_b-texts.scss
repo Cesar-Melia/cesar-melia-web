@@ -1,17 +1,35 @@
 .b-text {
   color: var(--color-text);
 
+  &--title-home {
+    font-family: "quentin", "alieron", Arial;
+    font-size: 150px;
+
+    @include media-breakpoint-down(lg) {
+      font-size: 100px;
+    }
+  }
+
+  &--menu {
+    color: var(--color-primary);
+    font-size: 22px;
+  }
+
   &--title {
     margin: 0;
     font-size: 28px;
+  }
+
+  &--title2 {
+    margin-top: 50px;
+    font-size: 18px;
   }
 
   &--paragraph {
     text-align: justify;
   }
 
-  &--title2 {
-    margin: 50px 0 0 0;
-    font-size: 18px;
+  &--center {
+    text-align: center;
   }
 }

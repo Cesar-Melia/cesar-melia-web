@@ -1,19 +1,22 @@
 @import "variables";
 
 @font-face {
-  font-family: '#{$icomoon-font-family}';
-  src:
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?n4rhcm') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?n4rhcm') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?n4rhcm##{$icomoon-font-family}') format('svg');
+  font-family: "#{$icomoon-font-family}";
+  src: url("#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?i7v4r8")
+      format("truetype"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.woff?i7v4r8")
+      format("woff"),
+    url("#{$icomoon-font-path}/#{$icomoon-font-family}.svg?i7v4r8##{$icomoon-font-family}")
+      format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: '#{$icomoon-font-family}' !important;
+  font-family: "#{$icomoon-font-family}" !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -26,94 +29,98 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-file-pdf-o {
+.icon-logo {
   &:before {
-    content: $icon-file-pdf-o; 
-  }
-}
-.icon-bitbucket {
-  &:before {
-    content: $icon-bitbucket; 
-  }
-}
-.icon-gitlab {
-  &:before {
-    content: $icon-gitlab; 
-  }
-}
-.icon-arrow-right {
-  &:before {
-    content: $icon-arrow-right; 
-  }
-}
-.icon-arrow-left {
-  &:before {
-    content: $icon-arrow-left; 
-  }
-}
-.icon-arrow-down {
-  &:before {
-    content: $icon-arrow-down; 
-  }
-}
-.icon-arrow-up {
-  &:before {
-    content: $icon-arrow-up; 
-  }
-}
-.icon-menu {
-  &:before {
-    content: $icon-menu; 
-  }
-}
-.icon-search {
-  &:before {
-    content: $icon-search; 
+    content: $icon-Logo-simple_Negro;
   }
 }
 .icon-home {
   &:before {
-    content: $icon-home; 
+    content: $icon-home;
   }
 }
 .icon-list {
   &:before {
-    content: $icon-list; 
+    content: $icon-list;
   }
 }
 .icon-blocks {
   &:before {
-    content: $icon-blocks; 
+    content: $icon-blocks;
+  }
+}
+.icon-file-pdf-o {
+  &:before {
+    content: $icon-file-pdf-o;
+  }
+}
+.icon-bitbucket {
+  &:before {
+    content: $icon-bitbucket;
+  }
+}
+.icon-gitlab {
+  &:before {
+    content: $icon-gitlab;
+  }
+}
+.icon-arrow-right {
+  &:before {
+    content: $icon-arrow-right;
+  }
+}
+.icon-arrow-left {
+  &:before {
+    content: $icon-arrow-left;
+  }
+}
+.icon-arrow-down {
+  &:before {
+    content: $icon-arrow-down;
+  }
+}
+.icon-arrow-up {
+  &:before {
+    content: $icon-arrow-up;
+  }
+}
+.icon-menu {
+  &:before {
+    content: $icon-menu;
+  }
+}
+.icon-search {
+  &:before {
+    content: $icon-search;
   }
 }
 .icon-folder-download {
   &:before {
-    content: $icon-folder-download; 
+    content: $icon-folder-download;
   }
 }
 .icon-instagram {
   &:before {
-    content: $icon-instagram; 
+    content: $icon-instagram;
   }
 }
 .icon-twitter {
   &:before {
-    content: $icon-twitter; 
+    content: $icon-twitter;
   }
 }
 .icon-github {
   &:before {
-    content: $icon-github; 
+    content: $icon-github;
   }
 }
 .icon-linkedin {
   &:before {
-    content: $icon-linkedin; 
+    content: $icon-linkedin;
   }
 }
 .icon-linkedin2 {
   &:before {
-    content: $icon-linkedin2; 
+    content: $icon-linkedin2;
   }
 }
-

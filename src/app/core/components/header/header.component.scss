@@ -4,7 +4,6 @@
 
 .c-header {
   width: 100%;
-  padding: 10px 0;
   position: fixed;
   top: 0px;
   z-index: 999;
@@ -17,18 +16,21 @@
   }
 
   &__nav {
+    width: 900px;
+
+    @include media-breakpoint-down(lg) {
+      width: auto;
+    }
   }
 
   &__logo {
-    height: 50px;
+    font-size: 70px;
     margin: 0 50px;
   }
 
   &__link {
     text-decoration: none;
-    color: var(--color-primary);
     margin: 0 20px;
-    font-size: 22px;
 
     &--active {
       color: var(--color-primary-active);

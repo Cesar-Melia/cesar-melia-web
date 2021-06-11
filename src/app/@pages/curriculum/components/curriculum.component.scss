@@ -16,4 +16,20 @@
 
   &__text-block {
   }
+
+  &__logo {
+    height: 70px;
+    width: 70px;
+    margin: 0 10px;
+
+    @include media-breakpoint-down(lg) {
+      height: 50px;
+      width: 50px;
+      margin: 0 7px;
+    }
+  }
+
+  &__logos-block {
+    margin-top: 50px;
+  }
 }
