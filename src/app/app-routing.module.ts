@@ -29,6 +29,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./@pages/porfolio/porfolio.module').then((m) => m.PorfolioModule),
   },
+  {
+    path: 'porfolio/:name',
+    loadChildren: () =>
+      import('./@pages/porfolio/porfolio.module').then((m) => m.PorfolioModule),
+  },
 ];
 
 @NgModule({

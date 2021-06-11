@@ -14,6 +14,10 @@
     border-radius: 10px;
   }
 
+  &__title {
+    margin-bottom: 30px;
+  }
+
   &__gallery {
   }
 
@@ -21,10 +25,41 @@
     margin: 0;
   }
 
+  &__project-container {
+    margin: 20px;
+  }
+
   &__img {
     width: 100%;
   }
 
   &__img-container {
+    margin-bottom: -4px;
+    padding: 0;
+    position: relative;
+
+    &:hover {
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+
+      .c-porfolio__text-container {
+        display: block;
+      }
+    }
+  }
+
+  &__text-container {
+    display: none;
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    color: var(--color-primary);
   }
 }

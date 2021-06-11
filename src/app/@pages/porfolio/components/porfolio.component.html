@@ -1,20 +1,68 @@
 <section class="c-porfolio">
     <div class="c-porfolio__card d-flex justify-content-between flex-column">
+        <div class="c-porfolio__title">
+            <h2 class="b-text b-text--title b-text--center">Páginas Web</h2>
+        </div>
         <div class="c-porfolio__gallery d-flex justify-content-center flex-wrap">
-            <figure *ngFor="let project of projects"
-                class="c-porfolio__project-box d-flex justify-content-center flex-column">
-                <div *ngIf="project.type !== 'videogame' && project.type !== 'app'"
-                    class="d-flex justify-content-between">
-                    <div class="c-porfolio__img-container col-6">
+            <figure *ngFor="let project of websites"
+                class="c-porfolio__project-box d-flex justify-content-center flex-column col-12 col-lg-6">
+                <div class="c-porfolio__project-container d-flex justify-content-between flex-column">
+                    <a routerLink="/porfolio/{{project.name}}">
+                        <div class="c-porfolio__img-container">
+                            <img class="c-porfolio__img" src="{{project.imgUrl}}" alt="{{project.name}} image">
+
+                            <div class="c-porfolio__text-container">
+                                <figcaption>
+                                    <h2 class="b-text b-text--title b-text--center b-text--white">{{project.name}}</h2>
+                                </figcaption>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+            </figure>
+        </div>
+    </div>
+
+    <div class="c-porfolio__card d-flex justify-content-between flex-column">
+        <div class="c-porfolio__title">
+            <h2 class="b-text b-text--title b-text--center">Juegos</h2>
+        </div>
+        <div class="c-porfolio__gallery d-flex justify-content-center flex-wrap">
+            <figure *ngFor="let project of games"
+                class="c-porfolio__project-box d-flex justify-content-center flex-column col-12 col-lg-6">
+                <div class="c-porfolio__project-container d-flex justify-content-between flex-column">
+                    <div class="c-porfolio__img-container">
                         <img class="c-porfolio__img" src="{{project.imgUrl}}" alt="{{project.name}} image">
-                    </div>
-                    <div>
-                        <figcaption class="b-text b-text--title2 b-text--center">
-                            <h2>{{project.name}}</h2>
-                        </figcaption>
-                    </div>
 
+                        <div class="c-porfolio__text-container">
+                            <figcaption>
+                                <h2 class="b-text b-text--title b-text--center b-text--white">{{project.name}}</h2>
+                            </figcaption>
+                        </div>
+                    </div>
+                </div>
+            </figure>
+        </div>
+    </div>
 
+    <div class="c-porfolio__card d-flex justify-content-between flex-column">
+        <div class="c-porfolio__title">
+            <h2 class="b-text b-text--title b-text--center">Aplicaciones</h2>
+        </div>
+        <div class="c-porfolio__gallery d-flex justify-content-center flex-wrap">
+            <figure *ngFor="let project of apps"
+                class="c-porfolio__project-box d-flex justify-content-center flex-column col-12 col-lg-6">
+                <div class="c-porfolio__project-container d-flex justify-content-between flex-column">
+                    <div class="c-porfolio__img-container">
+                        <img class="c-porfolio__img" src="{{project.imgUrl}}" alt="{{project.name}} image">
+
+                        <div class="c-porfolio__text-container">
+                            <figcaption>
+                                <h2 class="b-text b-text--title b-text--center b-text--white">{{project.name}}</h2>
+                            </figcaption>
+                        </div>
+                    </div>
                 </div>
             </figure>
         </div>
