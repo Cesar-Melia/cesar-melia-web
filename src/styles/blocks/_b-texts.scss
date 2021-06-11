@@ -13,15 +13,17 @@
   &--menu {
     color: var(--color-primary);
     font-size: 22px;
+    font-family: "clemente";
   }
 
   &--title {
     margin: 0;
-    font-size: 28px;
+    font-size: 34px;
+    font-family: "generica";
   }
 
   &--title2 {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   &--title3 {
@@ -29,6 +31,7 @@
   }
 
   &--paragraph {
+    font-size: 20px;
     text-align: justify;
   }
 
