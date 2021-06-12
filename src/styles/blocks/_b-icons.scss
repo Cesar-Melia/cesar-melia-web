@@ -39,6 +39,11 @@
   &__big {
     font-size: 40px;
     margin: 25px;
+
+    @include media-breakpoint-down(md) {
+      font-size: 30px;
+      margin: 10px;
+    }
   }
 
   &__skin-dark {

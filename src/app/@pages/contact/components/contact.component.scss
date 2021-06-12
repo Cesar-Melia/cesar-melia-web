@@ -9,13 +9,22 @@
     width: 1000px;
     background-color: var(--color-primary);
     padding: 70px 70px 30px 70px;
-    margin: 120px 80px auto 80px;
+    margin: 120px 80px 20px 80px;
     box-shadow: 0px 4px 4px var(--transparent-black);
     border-radius: 10px;
+
+    @include media-breakpoint-down(md) {
+      padding: 70px 35px 30px 35px;
+      margin: 120px 40px 20px 40px;
+    }
   }
 
   &__form {
     min-width: 400px;
+
+    @include media-breakpoint-down(md) {
+      min-width: 0;
+    }
   }
 
   &__title {
@@ -30,14 +39,24 @@
   &__input {
     width: 400px;
     height: 30px;
+
+    @include media-breakpoint-down(md) {
+      width: 250px;
+    }
   }
 
   &__textarea {
-    width: 400px;
     max-width: 400px;
     min-width: 400px;
     min-height: 100px;
     max-height: 300px;
+
+    @include media-breakpoint-down(md) {
+      max-width: 250px;
+      min-width: 250px;
+      min-height: 100px;
+      max-height: 300px;
+    }
   }
 
   &__submit {
@@ -57,7 +76,7 @@
 
   &__error {
     display: inline;
-    color: rgb(255, 86, 86);
+    color: var(--color-error);
   }
 
   &__social {

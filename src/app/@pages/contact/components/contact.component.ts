@@ -35,5 +35,8 @@ export class ContactComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  submitForm() {}
+  submitForm() {
+    this.submitted = true;
+    console.log(this.contactForm);
+  }
 }
