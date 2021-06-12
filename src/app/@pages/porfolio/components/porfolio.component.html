@@ -32,15 +32,18 @@
             <figure *ngFor="let project of games"
                 class="c-porfolio__project-box d-flex justify-content-center flex-column col-12 col-lg-6">
                 <div class="c-porfolio__project-container d-flex justify-content-between flex-column">
-                    <div class="c-porfolio__img-container">
-                        <img class="c-porfolio__img" src="{{project.imgUrl}}" alt="{{project.name}} image">
+                    <a routerLink="/porfolio/{{project.name}}">
+                        <div class="c-porfolio__img-container">
+                            <img class="c-porfolio__img" src="{{project.imgUrl}}" alt="{{project.name}} image">
 
-                        <div class="c-porfolio__text-container">
-                            <figcaption>
-                                <h2 class="b-text b-text--title b-text--center b-text--white">{{project.name}}</h2>
-                            </figcaption>
+                            <div class="c-porfolio__text-container">
+                                <figcaption>
+                                    <h2 class="b-text b-text--title b-text--center b-text--white">{{project.name}}</h2>
+                                </figcaption>
+                            </div>
+
                         </div>
-                    </div>
+                    </a>
                 </div>
             </figure>
         </div>
@@ -54,15 +57,18 @@
             <figure *ngFor="let project of apps"
                 class="c-porfolio__project-box d-flex justify-content-center flex-column col-12 col-lg-6">
                 <div class="c-porfolio__project-container d-flex justify-content-between flex-column">
-                    <div class="c-porfolio__img-container">
-                        <img class="c-porfolio__img" src="{{project.imgUrl}}" alt="{{project.name}} image">
+                    <a routerLink="/porfolio/{{project.name}}">
+                        <div class="c-porfolio__img-container">
+                            <img class="c-porfolio__img" src="{{project.imgUrl}}" alt="{{project.name}} image">
 
-                        <div class="c-porfolio__text-container">
-                            <figcaption>
-                                <h2 class="b-text b-text--title b-text--center b-text--white">{{project.name}}</h2>
-                            </figcaption>
+                            <div class="c-porfolio__text-container">
+                                <figcaption>
+                                    <h2 class="b-text b-text--title b-text--center b-text--white">{{project.name}}</h2>
+                                </figcaption>
+                            </div>
+
                         </div>
-                    </div>
+                    </a>
                 </div>
             </figure>
         </div>
