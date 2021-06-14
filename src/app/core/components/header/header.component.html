@@ -1,6 +1,21 @@
 <header class="c-header d-flex justify-content-center align-items-center">
-    <div class="c-header__items d-flex justify-content-center align-items-center">
-        <span class="b-icons__menu b-icons__skin d-block d-lg-none icon-menu"></span>
+    <div class="d-flex justify-content-center align-items-center">
+        <span class="b-icons__menu b-icons__skin d-block d-lg-none icon-menu" (click)="activateMenu()"
+            [ngClass]="{'b-icons__menu--active': 'menuActive === true'}"></span>
+        <!-- Revisar ngClass menuActive -->
+
+        <nav class="c-header__menu-mobile d-flex flex-column align-items-center"
+            [ngClass]="{'d-none': menuActive === false}">
+            <a class="b-text b-text--menu-mobile c-header__link " routerLink="/about"
+                routerLinkActive="c-header__link--active" (click)="activateMenu()">Sobre
+                mi</a>
+            <a class="b-text b-text--menu-mobile c-header__link " routerLink="/curriculum"
+                routerLinkActive="c-header__link--active" (click)="activateMenu()">Curriculum</a>
+            <a class="b-text b-text--menu-mobile c-header__link " routerLink="/porfolio"
+                routerLinkActive="c-header__link--active" (click)="activateMenu()">Porfolio</a>
+            <a class="b-text b-text--menu-mobile c-header__link " routerLink="/contact"
+                routerLinkActive="c-header__link--active" (click)="activateMenu()">Contacto</a>
+        </nav>
 
         <nav class="c-header__nav d-flex justify-content-between align-items-center">
             <a class="b-text b-text--menu c-header__link d-none d-lg-block" routerLink="/about"

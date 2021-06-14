@@ -10,11 +10,6 @@
   background-color: var(--color-transparent-black);
   backdrop-filter: saturate(180%) blur(20px);
 
-  &__items {
-    width: 100%;
-    max-width: 1400px;
-  }
-
   &__nav {
     width: 900px;
 
@@ -34,7 +29,8 @@
 
   &__link {
     text-decoration: none;
-    margin: 0 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 
     &--active {
       color: var(--color-primary-active);
@@ -48,5 +44,15 @@
   &__social {
     position: absolute;
     right: 50px;
+  }
+
+  &__menu-mobile {
+    position: absolute;
+    top: 71px;
+    width: 100%;
+    z-index: 1000;
+    background-color: var(--color-transparent-black);
+    backdrop-filter: saturate(180%) blur(20px);
+    padding-bottom: 75px;
   }
 }

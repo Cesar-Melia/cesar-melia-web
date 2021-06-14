@@ -2,7 +2,7 @@
   color: var(--color-text);
 
   &--title-home {
-    font-family: "quentin", "alieron", Arial;
+    font-family: "quentin";
     font-size: 150px;
 
     @include media-breakpoint-down(lg) {
@@ -18,6 +18,13 @@
     color: var(--color-primary);
     font-size: 22px;
     font-family: "clemente";
+  }
+
+  &--menu-mobile {
+    color: var(--color-primary);
+    font-size: 36px;
+    font-family: "clemente";
+    margin-top: 50px;
   }
 
   &--title {
