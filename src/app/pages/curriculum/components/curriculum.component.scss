@@ -14,7 +14,6 @@
     border-radius: 10px;
 
     @include media-breakpoint-down(lg) {
-      height: 100vh;
       padding: 120px 70px 30px 70px;
       margin: 0px;
       border-radius: 0px;
