@@ -13,9 +13,15 @@
     box-shadow: 0px 4px 4px var(--transparent-black);
     border-radius: 10px;
 
+    @include media-breakpoint-down(lg) {
+      height: 100vh;
+      padding: 0px 70px 30px 70px;
+      margin: 0px;
+      border-radius: 0px;
+    }
+
     @include media-breakpoint-down(md) {
-      padding: 70px 35px 30px 35px;
-      margin: 120px 40px 20px 40px;
+      padding: 0px 35px 30px 35px;
     }
   }
 

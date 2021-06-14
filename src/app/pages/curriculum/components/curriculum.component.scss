@@ -9,13 +9,19 @@
     max-width: 1000px;
     background-color: var(--color-primary);
     padding: 70px 70px 30px 70px;
-    margin: 120px 80px 20px 80px;
+    margin: 120px 80px 50px 80px;
     box-shadow: 0px 4px 4px var(--transparent-black);
     border-radius: 10px;
 
+    @include media-breakpoint-down(lg) {
+      height: 100vh;
+      padding: 120px 70px 30px 70px;
+      margin: 0px;
+      border-radius: 0px;
+    }
+
     @include media-breakpoint-down(md) {
-      padding: 70px 35px 30px 35px;
-      margin: 120px 40px 20px 40px;
+      padding: 120px 35px 30px 35px;
     }
   }
 
