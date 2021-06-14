@@ -46,4 +46,10 @@
       justify-content: center;
     }
   }
+
+  &__text-container {
+    @include media-breakpoint-down(lg) {
+      align-items: center;
+    }
+  }
 }
