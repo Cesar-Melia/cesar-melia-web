@@ -1,9 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
 //SETTINGS
-@import "./assets/fonts/icons/style.scss";
 @import "styles/settings/colors.settings";
 @import "styles/settings/fonts.settings";
+@import "./assets/fonts/icons/style.scss";
 
 //GENERIC
 @import "~normalize.css/normalize.css";

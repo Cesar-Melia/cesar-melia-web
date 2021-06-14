@@ -14,17 +14,21 @@
     @include media-breakpoint-down(lg) {
       font-size: 300px;
     }
+
+    @include media-breakpoint-down(md) {
+      font-size: 200px;
+    }
   }
 
   &__logo-block {
-    margin: 100px 50px 50px 0;
-
-    @include media-breakpoint-down(lg) {
-      margin: 180px 50px 0 0;
-    }
+    margin: 100px 50px 0 50px;
   }
 
   &__text-block {
     text-align: center;
+
+    @include media-breakpoint-down(md) {
+      margin: 0 20px;
+    }
   }
 }

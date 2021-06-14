@@ -5,34 +5,34 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () =>
-      import('./@pages/home/home.module').then((m) => m.HomeModule),
+      import('./pages/home/home.module').then((m) => m.HomeModule),
   },
   {
     path: 'about',
     loadChildren: () =>
-      import('./@pages/about/about.module').then((m) => m.AboutModule),
+      import('./pages/about/about.module').then((m) => m.AboutModule),
   },
   {
     path: 'contact',
     loadChildren: () =>
-      import('./@pages/contact/contact.module').then((m) => m.ContactModule),
+      import('./pages/contact/contact.module').then((m) => m.ContactModule),
   },
   {
     path: 'curriculum',
     loadChildren: () =>
-      import('./@pages/curriculum/curriculum.module').then(
+      import('./pages/curriculum/curriculum.module').then(
         (m) => m.CurriculumModule
       ),
   },
   {
     path: 'porfolio',
     loadChildren: () =>
-      import('./@pages/porfolio/porfolio.module').then((m) => m.PorfolioModule),
+      import('./pages/porfolio/porfolio.module').then((m) => m.PorfolioModule),
   },
   {
     path: 'porfolio/:name',
     loadChildren: () =>
-      import('./@pages/porfolio/porfolio.module').then((m) => m.PorfolioModule),
+      import('./pages/porfolio/porfolio.module').then((m) => m.PorfolioModule),
   },
 ];
 
