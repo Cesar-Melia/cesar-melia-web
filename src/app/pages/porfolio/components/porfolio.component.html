@@ -72,5 +72,28 @@
                 </div>
             </figure>
         </div>
+
+        <div class="c-porfolio__title mt-100">
+            <h2 class="b-text b-text--title b-text--center">Backend</h2>
+        </div>
+        <div class="c-porfolio__gallery d-flex justify-content-center flex-wrap">
+            <figure *ngFor="let project of backends"
+                class="c-porfolio__project-box d-flex justify-content-center flex-column col-12 col-lg-6">
+                <div class="c-porfolio__project-container d-flex justify-content-between flex-column">
+                    <a href="{{project.url}}" target="_blank">
+                        <div class="c-porfolio__img-container">
+                            <img class="c-porfolio__img" src="{{project.imgUrl}}" alt="{{project.name}} image">
+
+                            <div class="c-porfolio__text-container">
+                                <figcaption>
+                                    <h2 class="b-text b-text--title b-text--center b-text--white">{{project.name}}</h2>
+                                </figcaption>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+            </figure>
+        </div>
     </div>
 </section>

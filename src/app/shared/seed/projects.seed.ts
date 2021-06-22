@@ -115,4 +115,15 @@ export const seed = [
       'Website about this TV program with all the info about characters, houses, locations...',
     imgUrl: '../assets/images/projects/got_800.png',
   },
+  {
+    name: 'PC Shop API',
+    date: '2021-06-18',
+    type: 'backend',
+    technologies: ['Node', 'Express', 'Handlebars', 'CSS', 'SASS', 'Bootstrap'],
+    isPublic: true,
+    url: 'https://pc-shop-node.herokuapp.com/',
+    repoUrl: 'https://gitlab.com/Cesar-Melia/pc-shop-backend',
+    description: 'PC Shop backend with views.',
+    imgUrl: '../assets/images/projects/pc-shop-back_800.png',
+  },
 ];

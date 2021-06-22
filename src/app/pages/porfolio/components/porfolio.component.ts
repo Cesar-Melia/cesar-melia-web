@@ -12,6 +12,7 @@ export class PorfolioComponent implements OnInit {
   websites: Projects[] = [];
   games: Projects[] = [];
   apps: Projects[] = [];
+  backends: Projects[] = [];
 
   constructor() {}
 
@@ -27,5 +28,9 @@ export class PorfolioComponent implements OnInit {
     );
 
     this.apps = this.projects.filter((project) => project.type === 'app');
+
+    this.backends = this.projects.filter(
+      (project) => project.type === 'backend'
+    );
   }
 }
