@@ -7,7 +7,7 @@
             <figure *ngFor="let project of websites"
                 class="c-porfolio__project-box d-flex justify-content-center flex-column col-12 col-lg-6">
                 <div class="c-porfolio__project-container d-flex justify-content-between flex-column">
-                    <a routerLink="/porfolio/{{project.name}}">
+                    <a href="{{project.url}}" target="_blank">
                         <div class="c-porfolio__img-container">
                             <img class="c-porfolio__img" src="{{project.imgUrl}}" alt="{{project.name}} image">
 
@@ -32,7 +32,7 @@
             <figure *ngFor="let project of games"
                 class="c-porfolio__project-box d-flex justify-content-center flex-column col-12 col-lg-6">
                 <div class="c-porfolio__project-container d-flex justify-content-between flex-column">
-                    <a routerLink="/porfolio/{{project.name}}">
+                    <a href="{{project.url}}" target="_blank">
                         <div class="c-porfolio__img-container">
                             <img class="c-porfolio__img" src="{{project.imgUrl}}" alt="{{project.name}} image">
 
@@ -57,7 +57,7 @@
             <figure *ngFor="let project of apps"
                 class="c-porfolio__project-box d-flex justify-content-center flex-column col-12 col-lg-6">
                 <div class="c-porfolio__project-container d-flex justify-content-between flex-column">
-                    <a routerLink="/{{project.name}}">
+                    <a href="{{project.url}}" target="_blank">
                         <div class="c-porfolio__img-container">
                             <img class="c-porfolio__img" src="{{project.imgUrl}}" alt="{{project.name}} image">
 
