@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "project-detail.component.scss"
+    ],
+    "names": [],
+    "file": "project-detail.component.css"
+}

@@ -53,4 +53,10 @@
   &--white {
     color: var(--color-primary);
   }
+
+  &--link {
+    &:hover {
+      color: var(--color-gray);
+    }
+  }
 }
