@@ -33,4 +33,8 @@ export class PorfolioComponent implements OnInit {
       (project) => project.type === 'backend'
     );
   }
+
+  ngOnDestroy(): void {
+    this.projects = this.projects.reverse();
+  }
 }
