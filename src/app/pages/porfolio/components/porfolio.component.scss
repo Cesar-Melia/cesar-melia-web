@@ -42,13 +42,12 @@
 
   &__img {
     width: 100%;
+    // object-fit: cover;
+    // object-position: center;
     border: 1px solid var(--color-lighter-gray);
-
-    // opacity: 0.9;
   }
 
   &__img-container {
-    // margin-bottom: -4px;
     padding: 0;
     position: relative;
 
@@ -57,10 +56,11 @@
         content: "";
         position: absolute;
         top: 0;
-        bottom: 0;
+        bottom: 3px;
         left: 0;
-        right: 0;
+        right: -2px;
         background: rgba(0, 0, 0, 0.85);
+
         &:hover {
           &__img {
             opacity: 0;
@@ -76,13 +76,38 @@
 
   &__text-container {
     display: none;
-    position: absolute;
-    top: 45%;
     width: 100%;
     color: var(--color-primary-active);
+
+    &--title {
+      position: relative;
+    }
   }
 
   &__atributes {
     margin-top: 10px;
+  }
+
+  &__fig-title {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    color: var(--color-primary);
+
+    @include media-breakpoint-down(md) {
+      font-size: 24px;
+    }
+  }
+
+  &__fig-tecnologies {
+    position: absolute;
+    top: 75%;
+    width: 100%;
+    color: var(--color-primary);
+    font-size: 14px;
+
+    @include media-breakpoint-down(md) {
+      font-size: 12px;
+    }
   }
 }

@@ -4,79 +4,129 @@
             <h2 class="b-text b-text--title b-text--center">Páginas Web</h2>
         </div>
         <div class="c-porfolio__gallery d-flex justify-content-center flex-wrap">
-            <figure *ngFor="let project of websites"
-                class="c-porfolio__project-box d-flex justify-content-center flex-column col-12 col-lg-6">
-                <div class="c-porfolio__project-container d-flex justify-content-between flex-column">
-                    <a href="{{project.url}}" target="_blank">
-                        <div class="c-porfolio__img-container">
-                            <img class="c-porfolio__img" src="{{project.imgUrl}}" alt="{{project.name}} image">
+            <figure *ngFor="let project of websites" class="
+          c-porfolio__project-box
+          d-flex
+          justify-content-center
+          flex-column
+          col-12 col-lg-6
+        ">
+                <div class="
+            c-porfolio__project-container
+            d-flex
+            justify-content-between
+            flex-column
+          ">
+                    <a href="{{ project.url }}" target="_blank">
+                        <div class="c-porfolio__img-container ">
+                            <img class="c-porfolio__img" src="{{ project.imgUrl }}"
+                                alt="{{ project.name }} image" />
 
-                            <div class="c-porfolio__text-container">
-                                <figcaption>
-                                    <h2 class="b-text b-text--title b-text--center b-text--white">{{project.name}}</h2>
-                                </figcaption>
-                            </div>
-
+                            <figcaption class="c-porfolio__text-container">
+                                <h2 class="
+                    b-text b-text--title b-text--center b-text--white
+                    c-porfolio__fig-title
+                  ">
+                                    {{ project.name }}
+                                </h2>
+                                <span class="
+                    b-text b-text--center b-text--white
+                    c-porfolio__fig-tecnologies
+                  ">{{ project.technologies.join(" | ") }}</span>
+                            </figcaption>
                         </div>
                     </a>
                     <div class="c-porfolio__atributes d-flex flex-column align-items-center">
-                        <a class="b-text b-text--link" href="{{project.repoUrl}}" target="_blank">Repositorio Git</a>
+                        <a class="b-text b-text--link" href="{{ project.repoUrl }}"
+                            target="_blank">Repositorio</a>
                     </div>
                 </div>
             </figure>
         </div>
-
-
 
         <div class="c-porfolio__title mt-100">
             <h2 class="b-text b-text--title b-text--center">Juegos</h2>
         </div>
         <div class="c-porfolio__gallery d-flex justify-content-center flex-wrap">
-            <figure *ngFor="let project of games"
-                class="c-porfolio__project-box d-flex justify-content-center flex-column col-12 col-lg-6">
-                <div class="c-porfolio__project-container d-flex justify-content-between flex-column">
-                    <a href="{{project.url}}" target="_blank">
+            <figure *ngFor="let project of games" class="
+          c-porfolio__project-box
+          d-flex
+          justify-content-center
+          flex-column
+          col-12 col-lg-6
+        ">
+                <div class="
+            c-porfolio__project-container
+            d-flex
+            justify-content-between
+            flex-column
+          ">
+                    <a href="{{ project.url }}" target="_blank">
                         <div class="c-porfolio__img-container">
-                            <img class="c-porfolio__img" src="{{project.imgUrl}}" alt="{{project.name}} image">
+                            <img class="c-porfolio__img" src="{{ project.imgUrl }}"
+                                alt="{{ project.name }} image" />
 
-                            <div class="c-porfolio__text-container">
-                                <figcaption>
-                                    <h2 class="b-text b-text--title b-text--center b-text--white">{{project.name}}</h2>
-                                </figcaption>
-                            </div>
-
+                            <figcaption class="c-porfolio__text-container">
+                                <h2 class="
+                    b-text b-text--title b-text--center b-text--white
+                    c-porfolio__fig-title
+                  ">
+                                    {{ project.name }}
+                                </h2>
+                                <span class="
+                    b-text b-text--center b-text--white
+                    c-porfolio__fig-tecnologies
+                  ">{{ project.technologies.join(" | ") }}</span>
+                            </figcaption>
                         </div>
                     </a>
                     <div class="c-porfolio__atributes d-flex flex-column align-items-center">
-                        <a class="b-text b-text--link" href="{{project.repoUrl}}" target="_blank">Repositorio Git</a>
+                        <a class="b-text b-text--link" href="{{ project.repoUrl }}"
+                            target="_blank">Repositorio</a>
                     </div>
                 </div>
             </figure>
         </div>
 
-
-
         <div class="c-porfolio__title mt-100">
             <h2 class="b-text b-text--title b-text--center">Aplicaciones</h2>
         </div>
         <div class="c-porfolio__gallery d-flex justify-content-center flex-wrap">
-            <figure *ngFor="let project of apps"
-                class="c-porfolio__project-box d-flex justify-content-center flex-column col-12 col-lg-6">
-                <div class="c-porfolio__project-container d-flex justify-content-between flex-column">
-                    <a href="{{project.url}}" target="_blank">
+            <figure *ngFor="let project of apps" class="
+          c-porfolio__project-box
+          d-flex
+          justify-content-center
+          flex-column
+          col-12 col-lg-6
+        ">
+                <div class="
+            c-porfolio__project-container
+            d-flex
+            justify-content-between
+            flex-column
+          ">
+                    <a href="{{ project.url }}" target="_blank">
                         <div class="c-porfolio__img-container">
-                            <img class="c-porfolio__img" src="{{project.imgUrl}}" alt="{{project.name}} image">
+                            <img class="c-porfolio__img" src="{{ project.imgUrl }}"
+                                alt="{{ project.name }} image" />
 
-                            <div class="c-porfolio__text-container">
-                                <figcaption>
-                                    <h2 class="b-text b-text--title b-text--center b-text--white">{{project.name}}</h2>
-                                </figcaption>
-                            </div>
-
+                            <figcaption class="c-porfolio__text-container">
+                                <h2 class="
+                    b-text b-text--title b-text--center b-text--white
+                    c-porfolio__fig-title
+                  ">
+                                    {{ project.name }}
+                                </h2>
+                                <span class="
+                    b-text b-text--center b-text--white
+                    c-porfolio__fig-tecnologies
+                  ">{{ project.technologies.join(" | ") }}</span>
+                            </figcaption>
                         </div>
                     </a>
                     <div class="c-porfolio__atributes d-flex flex-column align-items-center">
-                        <a class="b-text b-text--link" href="{{project.repoUrl}}" target="_blank">Repositorio Git</a>
+                        <a class="b-text b-text--link" href="{{ project.repoUrl }}"
+                            target="_blank">Repositorio</a>
                     </div>
                 </div>
             </figure>
@@ -86,23 +136,41 @@
             <h2 class="b-text b-text--title b-text--center">Backend</h2>
         </div>
         <div class="c-porfolio__gallery d-flex justify-content-center flex-wrap">
-            <figure *ngFor="let project of backends"
-                class="c-porfolio__project-box d-flex justify-content-center flex-column col-12 col-lg-6">
-                <div class="c-porfolio__project-container d-flex justify-content-between flex-column">
-                    <a href="{{project.url}}" target="_blank">
+            <figure *ngFor="let project of backends" class="
+          c-porfolio__project-box
+          d-flex
+          justify-content-center
+          flex-column
+          col-12 col-lg-6
+        ">
+                <div class="
+            c-porfolio__project-container
+            d-flex
+            justify-content-between
+            flex-column
+          ">
+                    <a href="{{ project.url }}" target="_blank">
                         <div class="c-porfolio__img-container">
-                            <img class="c-porfolio__img" src="{{project.imgUrl}}" alt="{{project.name}} image">
+                            <img class="c-porfolio__img" src="{{ project.imgUrl }}"
+                                alt="{{ project.name }} image" />
 
-                            <div class="c-porfolio__text-container">
-                                <figcaption>
-                                    <h2 class="b-text b-text--title b-text--center b-text--white">{{project.name}}</h2>
-                                </figcaption>
-                            </div>
-
+                            <figcaption class="c-porfolio__text-container">
+                                <h2 class="
+                    b-text b-text--title b-text--center b-text--white
+                    c-porfolio__fig-title
+                  ">
+                                    {{ project.name }}
+                                </h2>
+                                <span class="
+                    b-text b-text--center b-text--white
+                    c-porfolio__fig-tecnologies
+                  ">{{ project.technologies.join(" | ") }}</span>
+                            </figcaption>
                         </div>
                     </a>
                     <div class="c-porfolio__atributes d-flex flex-column align-items-center">
-                        <a class="b-text b-text--link" href="{{project.repoUrl}}" target="_blank">Repositorio Git</a>
+                        <a class="b-text b-text--link" href="{{ project.repoUrl }}"
+                            target="_blank">Repositorio</a>
                     </div>
                 </div>
             </figure>

@@ -54,6 +54,10 @@
     color: var(--color-primary);
   }
 
+  &--gray {
+    color: var(--color-gray);
+  }
+
   &--link {
     &:hover {
       color: var(--color-gray);
